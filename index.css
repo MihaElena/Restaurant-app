@@ -1,0 +1,235 @@
+
+
+body {
+    margin: 0;
+    background-color: #ebeced;
+    color: #333;
+    font-family: "Smythe", serif;
+    
+}
+
+
+main, header{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+
+
+.container {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center; 
+}
+
+/* menu */
+
+.card {
+    display: flex;
+    position: relative;
+    width: 508px;
+    margin: 47px 0 auto;
+    border-bottom: 1px solid #D2D2D2;
+    padding-bottom: 20px;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 0;
+    padding: 11px;
+}
+
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 16px;
+    padding: 11px;
+}
+
+h2{  
+    font-size: 28px;
+    font-weight: 200;
+    margin: 0 0 3px 0;
+}
+
+h3{  
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 0 3px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0 5px 0;
+    color: #8B8B8B;
+}
+
+
+
+.icon{
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.emoji{
+    font-size: 80px;
+}
+
+i{
+    font-size: 40px;
+}
+
+.outlined-icon {
+    color: transparent; /* Face interiorul transparent */
+    -webkit-text-stroke: 2px black; /* Contur negru */
+}
+
+/* orer */
+
+.title-order {
+    display: none;
+    text-align: center;
+    
+}
+
+.complete-order {
+    display: none;
+        
+}
+
+
+#order {
+    display: flex;
+    position: relative;
+    width: 508px;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    
+}
+
+
+
+
+.total {
+    display: flex;
+    border-top: 2px solid black;
+    position: relative;
+    width: 508px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.remove-btn{
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    width: 508px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    color:#ffffff;
+    background-color: #16DB99;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+
+/* pay form */
+
+.hidden{
+    display: none;
+}
+
+.payment-card{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 295px;
+    
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 524px;
+    margin: 0 auto;
+    height: 542px;
+    padding: 20px;
+    margin-top: 0px;
+    gap: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 300px 4px #9CA3AF;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+
+    
+}
+
+
+input{
+    border: 1.297px solid #757575;
+    padding: 8px;
+    border-radius: 5px;  
+    height: 71px;
+    font-size: 20px;
+    margin-bottom: 23px;
+}
+
+.pay{
+    width: 524px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+form h2{
+    margin-top: 47px;
+    margin-bottom: 46px;
+    font-weight: bold;
+}
+
+form button{
+    height: 71px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* final message */
+.finished-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 504px;
+    height: 120px;
+    margin: 45px auto;
+    border-bottom: 1px solid #D2D2D2;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #065F46;
+    border-radius: 3px;
+    background: #ECFDF5;
+    
+}
+

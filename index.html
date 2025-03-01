@@ -1,0 +1,102 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <!--Google Fonts-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <img src="header.png"  alt="A hamburger">
+        </header>
+        <main>
+            <section class="container" id="container"></section>
+
+
+            <div class="order">
+
+                <div class="title-order">
+                    <h2>Your Order</h2>
+                </div>
+                   
+                <section class="container" id="order"></section> 
+                   
+                <section class="card total" id="total"></section>
+       
+                <section class="container complete-order" > 
+                    <button id="complete-order">Complete order</button>
+                </section>
+          
+                <div class="title-order">
+                    <h2>Your Order</h2>
+                </div>
+            
+                <section class="container" id="order"></section> 
+               
+                <section class="card total" id="total"></section>
+
+                <section class="container complete-order" > 
+                    <button id="complete-order">Complete order</button>
+                </section>
+
+            </div>
+
+            <div class="finished-order" id="message">
+
+                                 
+
+            </div>
+
+
+        </main>
+
+
+        <div class="payment-card hidden">
+            <form  id="form">
+                <h2>Enter card details</h2>
+                <input
+                    type="text"
+                    id="customerName" 
+                    name="customerName"
+                    placeholder="Enter your name"
+                    required
+                >
+    
+                <input 
+                id="ccn" 
+                type="tel" 
+                inputmode="numeric" 
+                pattern="[0-9\s]{13,19}" 
+                autocomplete="cc-number" 
+                maxlength="19" 
+                placeholder="Enter card number" 
+                required
+                >
+    
+                <input 
+                    type="password" 
+                    id="cvv" 
+                    name="cvv" 
+                    inputmode="numeric" 
+                    pattern="[0-9]{3,4}" 
+                    maxlength="4" 
+                    placeholder="Enter CVV" 
+                    required
+                >
+    
+                <button class="pay" id="pay" type="submit">Pay</button>
+                
+            </form>
+
+        </div>      
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
